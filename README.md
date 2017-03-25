@@ -36,3 +36,7 @@ The above prints:
 ```
 The final answer is 7
 ```
+
+## Known Issues
+
+Doesn't not support rejections yet.
