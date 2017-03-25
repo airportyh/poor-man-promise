@@ -1,0 +1,14 @@
+{
+  "name": "poor-man-promise",
+  "version": "1.0.0",
+  "description": "A poor man's promise implementation.",
+  "main": "my_promise.js",
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Toby Ho",
+  "license": "ISC"
+}
