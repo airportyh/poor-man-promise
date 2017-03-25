@@ -3,11 +3,12 @@
   "version": "1.0.1",
   "description": "A poor man's promise implementation.",
   "main": "my_promise.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine": "^2.5.3"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",

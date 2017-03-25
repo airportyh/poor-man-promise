@@ -48,20 +48,20 @@ function MyPromise(fn) {
   }
 
   // notify a individual fulfillment listener
-  function notifyFulfilled(listener) {
-    // call the listener callback function
+  function notifyFulfilled(onFulfilled) {
+    // call the onFulfilled callback function
     // and get its result
-    var result = listener(value);
-    if (listener.nextPromise) {
+    var result = onFulfilled(value);
+    if (onFulfilled.nextPromise) {
       if (result && result.then) {
         // the result is a promise, defer to
         // its resolution to resolve the next
         // promise with the same value
-        result.then(listener.nextPromise.resolve);
+        result.then(onFulfilled.nextPromise.resolve);
       } else {
         // the result is a regular value
         // resolve the next promise
-        listener.nextPromise.resolve(result);
+        onFulfilled.nextPromise.resolve(result);
       }
     }
   }
